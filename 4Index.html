@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <p>Click below to do a Covid - 19 Test </p>
+        <button onclick="myfunction()">Click Here!</button>
+        
+        
+        
+        <p id="demo"></p>
+        
+        <script>
+            function myfunction(){
+                var fever,  cough,bodypain,msg;
+                var fever  =  prompt("Are you feverish?","yes");
+                var cough  = prompt("Do you have cough?", "yes");
+                var bodypain  = prompt("Do you have body pain?","yes");
+            }
+            if  (fever=="yes") {
+                if (bodypain== "yes") {
+                    msg="You need to contact a Doctor (101) or the cops(100) ASAP";
+                    document.getElementById("demo"). innerHTML=msg;
+                }
+                else if (bodypain=="no" ) {
+                    msg= "If you feel puckish or get a pody pain please connect with a doctor, in the meantime please stay home";
+                    document.getElementById("demo"). innerHTML=msg;
+                }
+                else{
+                    msg="I could not really catch that";
+                    document.getElementById("demo"). innerHTML=msg
+                }
+            }   
+
+        
+        
+        </script>
+    </body>
+</html>
